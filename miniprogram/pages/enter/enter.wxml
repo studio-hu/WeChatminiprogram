@@ -1,0 +1,35 @@
+<!--pages/enter/enter.wxml-->
+<!--pages/enter/enter.wxml-->
+<view class="search">
+    <van-search value="{{ value }}" placeholder="查询审核进度" />
+</view>
+<view>
+    <van-cell-group>
+        <van-field value="{{ name }}" placeholder="请输入姓名" error-message="{{nameError?'法人姓名格式错误':''}}" border="{{ false }}" label="法人姓名" bind:change="handlename" required />
+        <van-field value="{{ IdCard }}" placeholder="请输入身份证号" error-message="{{IdCardError?'身份证号格式错误':''}}" border="{{ false }}" label="身份证号" bind:change="handleIdCard" required />
+    </van-cell-group>
+</view>
+<view>
+    <text class="title">身份证照片</text>
+    <text class="desc">证件文字需能清晰辨认，勿遮挡或模糊，参考示例照片拍摄</text>
+    <view class="IDcontent">
+        <view class="IDdetail">
+            <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead">
+                <van-image width="150" height="80" src="/../../images/IDreverse.jpg" />
+            </van-uploader>
+            <text>身份证头像面</text>
+        </view>
+        <view class="IDdetail">
+            <van-uploader>
+                <van-image width="150" height="80" src="/../../images/IDpositive.jpg" />
+            </van-uploader>
+            <text>身份证国徽面</text>
+        </view>
+
+    </view>
+</view>
+<view class="nextStep" bindtap="nextStep">
+    <van-button color="#F04E4E" block>下一步</van-button>
+</view>
+<!-- 消息提示 -->
+<van-toast id="van-toast" />

@@ -1,0 +1,83 @@
+/* pages/merchantsHomepage/merchantsHomepage.wxss */
+.content {
+    width: 100%;
+    height: 100vh;
+    background-color: #7062F3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 542rpx;
+    height: 534rpx;
+    /* margin: 0 auto; */
+    /* background-color: aqua; */
+}
+.storePage{
+    width: 568rpx;
+    height: 340rpx;
+    background-color: #FCFCFC;
+    border-radius: 74rpx;
+    margin-bottom: 50rpx;
+}
+.businesses{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+}
+.businessesImage{
+    width: 132rpx;
+    height: 132rpx;
+    margin: 20rpx 20rpx 10rpx 40rpx;
+}
+.businessesMessage{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30rpx;
+}
+.businessesMessage text:nth-child(1){
+    font-size: 52rpx;
+    color: #000;
+}
+.businessesMessage text:nth-child(2){
+    font-size: 24rpx;
+    color: #000;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20rpx;
+}
+.menu-item{
+    width: 168rpx;
+    height: 134rpx;
+    border: #797979 1px solid;
+    border-radius: 14rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu-item:nth-child(1){
+    background-color:#F8AF5E ;
+}
+.menu-item:nth-child(2){
+    background-color:#90F9FD ;
+}
+.menu-item:nth-child(3){
+    background-color:#FA7F7F ;
+}
+
+.custom-class{
+    background-color:#FCFCFC !important;
+    color: #333333 !important;
+    border:  #030303 solid 1rpx !important;
+    border-radius: 14rpx !important;
+    width: 430rpx !important;
+    height: 108rpx !important;
+    font-size: 32rpx !important;
+    /* font-weight: bold !important; */
+}

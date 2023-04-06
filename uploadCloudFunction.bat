@@ -1,0 +1,1 @@
+"D:\微信web开发者工具\cli.bat" cloud functions deploy --e cloud-1g86mra2b9adddaf --n quickstartFunctions --r --project "D:\Desktop\第8组 基于个性化推送的商家实时优惠宣传平台\优惠券" --report_first --report

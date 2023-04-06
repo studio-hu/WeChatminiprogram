@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<view class="top-box">
+  <view>商家，</view>
+  <view class="next-text">雷猴呀！</view>
+</view>
+<!-- 登录、注册 -->
+<view class="center-box">
+  <view class="nav">
+    <view class="left {{current==1?'select':''}}" bindtap="click" data-code="1">
+      <text>登录</text>
+    </view>
+    <view class="right {{current==0?'select':''}}" bindtap="click" data-code="0">
+      <text>注册</text>
+    </view>
+  </view>
+  <!-- 登录 -->
+  <view class="input-box" hidden="{{current==0}}">
+    <view class="wei-input">
+      <icon type="waiting" color="#7062F3" size="16"></icon>
+      <input class="input" auto-focus placeholder="请输入手机号/登录名"/>
+    </view>
+    <view class="wei-input">
+      <icon type="success" color="#7062F3" size="16"></icon>
+      <input class="input" auto-focus placeholder="请输入登录密码"/>
+    </view>
+    <view class="forget">
+      <text>忘记密码?</text>
+    </view>
+  </view>
+  <!-- 注册 -->
+  <view class="input-box" hidden="{{current==1}}">
+    <view class="wei-input">
+      <icon type="waiting" color="#7062F3" size="16"></icon>
+      <input class="input" auto-focus placeholder="请输入手机号"/>
+    </view>
+    <view class="wei-input">
+      <icon type="waiting" color="#7062F3" size="16"></icon>
+      <input class="input" auto-focus placeholder="请输入6位验证码"/>
+      <text class="input-code" bindtap="getCode">{{codeText}}</text>
+    </view>
+    <view class="wei-input">
+      <icon type="success" color="#7062F3" size="16"></icon>
+      <input class="input" auto-focus placeholder="请输入密码"/>
+    </view>
+    <view class="wei-input">
+      <icon type="success" color="#7062F3" size="16"></icon>
+      <input class="input" auto-focus placeholder="请确认密码"/>
+    </view>
+  </view>
+  <view class="sumbit-btn">
+    <button class="button" 
+    style="background-color: #7062F3;font-size: 30rpx;" 
+    type="primary">立即{{current==1?'登录':'注册'}}</button>
+  </view>
+</view>
+<van-button plain type="info" size="small" style="margin-top:30px;margin-left:120px" bindtap="onEnter">商家入驻</van-button>
+<!-- 说明 -->
+<view class="bottom-box">
+  基于标签化推送的商家实时优惠宣传平台
+</view>
+

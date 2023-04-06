@@ -1,0 +1,39 @@
+<!--pages/companyQualification/companyQualification.wxml-->
+<view class="page">
+    <view style="width: 100%;">
+        <van-steps steps="{{ steps }}" active="{{ active }}" active-color="#7062F3" />
+    </view>
+    <view class="content">
+        <van-cell-group>
+            <van-field value="{{ shopName }}" placeholder="店铺名称" border="{{ false }}" bind:change="onChange" data-type="shopName" label="店铺名称" />
+            <van-field value="{{ fieldValue }}" is-link readonly label="地区" placeholder="请选择所在地区" border="{{ false }}" bind:tap="showPopup" />
+            <van-field value="{{ detailedAddress }}" placeholder="详细地址" border="{{ false }}" bind:change="onChange" data-type="detailedAddress" label="详细地址" />
+            <van-field value="{{ contactPerson }}" placeholder="联系人" border="{{ false }}" error-message="{{contactPersonError?'联系人格式错误':''}}" bind:change="onChange" data-type="contactPerson" label="联系人" />
+            <van-field value="{{ phoneNumber }}" placeholder="电话号码" border="{{ false }}" error-message="{{phoneNumberError?'电话号码格式错误':''}}"  bind:change="onChange" data-type="phoneNumber" label="电话号码" />
+            <van-cell title="营业执照副本" value-class="upload" title-width="200rpx" border="{{ false }}">
+                <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+            </van-cell>
+            <van-field value="{{ businessLicenseNo }}" placeholder="营业执照号" border="{{ false }}" bind:change="onChange" data-type="businessLicenseNo" label="营业执照号" />
+            <van-cell title="有效期起始" value="{{ dateStart }}" bind:click="onDisplayStart" is-link border="{{ false }}" />
+            <van-calendar show="{{ showCalendarStart  }}" bind:close="onCloseCalendarStart" bind:confirm="onConfirmStart" />
+            <van-cell title="有效期结束" value="{{ dateEnd }}" bind:click="onDisplayEnd" is-link border="{{ false }}" />
+            <van-calendar show="{{ showCalendarEnd }}" bind:close="onCloseCalendarEnd" bind:confirm="onConfirmEnd" />
+        </van-cell-group>
+
+    </view>
+
+
+
+
+</view>
+<view class="nextStep" bindtap="nextStep">
+    <van-button color="#F04E4E" block>下一步</van-button>
+</view>
+
+
+
+<van-popup show="{{ show }}" round position="bottom" custom-style="height: 45%" bind:close="onClose">
+    <van-area area-list="{{ areaList }}" bind:confirm="determine" bind:cancel="onClose" item-height="35" />
+</van-popup>
+<!-- 消息提示 -->
+<van-toast id="van-toast" />

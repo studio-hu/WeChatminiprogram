@@ -1,0 +1,4 @@
+<!--pages/financialQualification/financialQualification.wxml-->
+<view style="width: 100%;">
+    <van-steps steps="{{ steps }}" active="{{ 1 }}" active-color="#7062F3" />
+</view>

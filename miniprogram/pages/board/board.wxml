@@ -1,0 +1,16 @@
+<!--pages/board/board.wxml-->
+<image mode="widthFix" src="../../images/avertising.jpg"></image>
+
+<view style="font-size: 15px;margin:5px;">
+    12元红包又双叒叕加量啦
+
+唯有春光和美食不可辜负
+
+上午10点半，下午3点，限时领取请戳小程序
+
+📆 还可连签打卡，5天领12元&7天领15元大红包
+</view>
+
+<view style="font-size: 15px;margin:5px;">
+进群新人专享：必得【13元大额券】1张，直达➤ http://dpurl.cn/SEetQN6z （当日有效，过时不候哦~）
+</view>

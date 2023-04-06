@@ -1,0 +1,92 @@
+/**index.wxss**/
+.determine_button{
+    background: #ff784a;
+    color: white;
+    border-radius: 10rpx;
+    height: 60rpx;
+    line-height:60rpx;
+    position: fixed;
+    bottom: 5rpx;
+    left: 8rpx;
+    width: 46%;
+  }
+  .determine_button1{
+    background: #ff784a;
+    color: white;
+    border-radius: 10rpx;
+    height: 60rpx;
+    line-height:60rpx;
+    position: fixed;
+    bottom: 5rpx;
+    right: 8rpx;
+    width: 46%;
+  }
+  .label_view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rpx 10rpx;
+    width: 140rpx;
+    height: 50rpx;
+    border: 1rpx solid rgb(114, 107, 107);
+    font-size: 26rpx;
+    border-radius: 12rpx;
+    color: rgb(114, 107, 107);
+    margin-right: 5rpx;
+    margin-top: 15rpx;
+  }
+  .btn_view{
+    margin: 10rpx 15rpx;
+    font-size: 26rpx;
+    color: rgb(99, 95, 95);
+    width: 700rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .btn_view text{
+    display: flex;
+    align-items: center;
+  }
+  .active{
+    background: #ff784a;
+    border: 1rpx solid rgb(255, 253, 253);
+  }
+  .btn_view .img{
+    margin-top: 8rpx;
+    width: 65rpx;
+    height: 65rpx;
+  }
+  .input_view{
+    font-size: 28rpx;
+    width: 400rpx;
+    height: 270rpx;
+    margin: 20rpx 20rpx;
+  }
+  .input{
+    margin-top: 20rpx;
+    margin-left: 22rpx;
+    width: 350rpx;
+    border: 1px #aaa solid
+  }
+
+  .nav{
+    display:  flex;
+    flex-direction:  row;
+    text-align:  center;
+  }
+  
+  .nav-item{
+    width:  35%;
+    margin-top:  20px;
+    font-size:  13px;
+    border: 3px white solid
+  }
+  
+  .hr{
+    height:  20px;
+    background-color:  #cccccc;
+    margin-top:15px;
+    opacity:  0.2;
+  }

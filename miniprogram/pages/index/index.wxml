@@ -1,0 +1,66 @@
+<!--index.wxml-->
+<view class="cu-list menuavatar">
+    <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image: url({{userInfo.avatarUrl}});">
+            <view class="content flex-sub">
+                <view style="color: black;margin-left: 120px;">{{userInfo.nickName}}</view>
+            </view>
+        </view>
+    </view>
+    </view>
+
+<view class='btn_view'>
+        <text>标签：</text>
+        <block wx:for="{{obtnArry}}" >
+          <view class='label_view {{item.selected ? "active" : ""}}' data-value="{{item.name}}" bindtap='dealTap' checked="{{item.selected}}" data-index="{{index}}" style="width: auto;">
+            {{item.name}}
+          </view>
+        </block>
+        <van-popup show="{{ show }}" bind:close="onClose" close-on-click-overlay="{{false}}" overlay="false">
+          <view class="input_view">
+            <text>请输入标签：</text>
+            <input class="input" placeholder="最多输入6个字" maxlength="6" bindinput="bindValue"></input>
+            <!-- <view class="btn"> -->
+                <button catchtap="onInputValue" class="determine_button">确定</button>
+                <button catchtap="onCancel" class="determine_button1">取消</button>
+            <!-- </view> -->
+          </view>
+        </van-popup>
+        <image bindtap='addinput' class="img" src="/images/jia.png" ></image>
+  </view>
+
+<view catchtap='onboard'>
+    <image mode="widthFix" src="../../images/avertising.jpg"></image>
+</view>
+
+<view class="flex nav">
+  	<view class="nav-item  {{index==current?'text-selected current':''}}" wx:for="{{tabs}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+  		{{item}}
+  	</view>
+  </view>
+
+<view class="nav">
+    <view class="nav-item"  catchtap='oncollectAll'>
+    <view> <image src="../../images/mydiscount.png" style="width:25px;height:23px;"></image></view>
+    <view>优惠专区</view>
+    </view>
+
+    <view class="nav-item" catchtap='onfood'>
+    <view>  <image src="../../images/food.png"  style="width:25px;height:23px;"></image></view>
+    <view>美食</view>
+    </view>
+
+    <view class="nav-item" catchtap='ondrink'>
+    <view>  <image src="../../images/drink.png"  style="width:25px;height:23px;"></image></view>
+    <view>饮品</view>
+    </view>
+</view>
+<view class=".hr"></view>
+<image src="../../images/hongbao.png" style="width:25px;height:23px; margin-left: 10px;"></image>
+<view style="border: 1px black solid;width: 65%;margin-top:-20px;margin-left: 45px;">
+    <text style="display:flex;align-items:center;justify-content:center;width: 100%;">签到躺赚大红包，戳我去领</text>    
+</view>
+    <van-button  style="margin-left: 265px;margin-top:-20px;" color="red" plain type="primary" size="mini" catchtap='onredpacket'>领取</van-button>
+<view>
+
+</view>

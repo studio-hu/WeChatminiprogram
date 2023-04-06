@@ -1,0 +1,5 @@
+<!--pages/testupload/testupload.wxml-->
+<view>
+  <van-uploader file-list="{{ fileList }}" max-count="6" deletable="{{ true }}"  bind:after-read="afterRead" bind:delete="delete"/>
+  <button bindtap="submit">上传</button>
+</view>

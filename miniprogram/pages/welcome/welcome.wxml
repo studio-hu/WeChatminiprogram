@@ -1,0 +1,13 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+  <image class="avatar" src="../../images/avertising.jpg"></image>
+  <text class="motto">Hello, 欢迎来到添添优惠</text>
+  <view class="journey-container1" bindtap="onHome">
+    <text class="journey">用户</text>
+  </view>
+
+  <view class="journey-container2" bindtap="onlogin">
+    <text class="journey">商家</text>
+  </view>
+</view>
+

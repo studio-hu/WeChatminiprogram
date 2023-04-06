@@ -1,0 +1,19 @@
+<!--pages/drink/drink.wxml-->
+<van-card wx:for="{{goods}}" 
+                        wx:for-item = "t" 
+                        wx:key="key" 
+                        custom-class="cardClass" 
+                        title-class="titleClass" 
+                        desc-class="descClass"
+                        desc="{{t.desc}}"
+                        tag="{{t.tag}}"
+                        title="{{t.title}}"
+                        thumb="{{t.image}}"
+                        data-value="{{t.id}}"
+                        bindtap="toMessage"
+                    >
+<view slot="footer">
+    <van-button size="mini">收藏</van-button>
+    <van-button size="mini">评论</van-button>
+  </view>
+ </van-card>

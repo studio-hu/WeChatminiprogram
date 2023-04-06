@@ -1,0 +1,27 @@
+/* pages/companyQualification/companyQualification.wxss */
+.upload{
+    /* text-align: center !important; */
+    /* background-color: aqua; */
+    /* float: left !important; */
+    display: flex;
+    /* margin-left: 20rpx; */
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+    /* background-color: aqua; */
+    
+}
+.nextStep {
+    position: absolute;
+    width: 100%;
+    /* height: 100rpx; */
+    bottom: 0;
+}
+.content{
+    /* height: 100vh; */
+    margin-bottom: 100rpx;
+    /* overflow: auto; */
+}

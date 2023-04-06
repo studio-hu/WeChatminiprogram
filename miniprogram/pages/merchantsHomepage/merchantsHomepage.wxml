@@ -1,0 +1,35 @@
+<!--pages/merchantsHomepage/merchantsHomepage.wxml-->
+<view class="content">
+    <view class="image">
+        <van-image width="100%" height="100%" src="/../../images/merchantsHomepage.png" />
+    </view>
+    <view class="storePage">
+        <view class="businesses">
+            <view class="businessesImage">
+                <van-image width="100%" height="100%" src="/../../images/Businesses_face.png" />
+            </view>
+            <view class="businessesMessage">
+                <text>蟹黄堡</text>
+                <text>广州软件学院</text>
+            </view>
+        </view>
+        <view class="menu">
+            <view class="menu-item">
+                <van-image width="62rpx" height="62rpx" src="/../../images/coupons.png" />
+                <text>优惠卷</text>
+            </view>
+            <view class="menu-item">
+                <van-image width="62rpx" height="62rpx" src="/../../images/message.png" />
+                <text>消息</text>
+            </view>
+            <view class="menu-item">
+                <van-image width="62rpx" height="62rpx" src="/../../images/setting.png" />
+                <text>设置</text>
+            </view>
+        </view>
+    </view>
+    <view>
+        <van-button type="default" custom-class="custom-class">点击发放优惠卷</van-button>
+    </view>
+
+</view>
