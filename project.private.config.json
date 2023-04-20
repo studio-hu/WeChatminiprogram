@@ -1,7 +1,8 @@
 {
     "setting": {
         "compileHotReLoad": true,
-        "useIsolateContext": false
+        "useIsolateContext": false,
+        "urlCheck": false
     },
     "condition": {
         "miniprogram": {
@@ -133,6 +134,62 @@
                 {
                     "name": "",
                     "pathName": "pages/testupload/testupload",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/tagPage/tagPage",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/couponDetails/couponDetails",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/shopDetails/shopDetails",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/dialogue/dialogue",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/couponComment/couponComment",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/shopComment/shopComment",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/allCouponComment/allCouponComment",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/allShopComment/allShopComment",
                     "query": "",
                     "launchMode": "default",
                     "scene": null

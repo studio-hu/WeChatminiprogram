@@ -7,95 +7,105 @@ Page({
      */
     data: {
         array: [],
-        albumName:'',
-        checked:false,
-        state:"",
-        show:false,
-        showID:"",
-        inputValue:"",
-        label:[],
-        obtnArry:[
-        ],
+        albumName: '',
+        checked: false,
+        state: "",
+        show: false,
+        showID: "",
+        inputValue: "",
+        label: [],
+        obtnArry: [],
     },
     bindKeyInput(e) {
         this.setData({
-          albumName: e.detail.value
+            albumName: e.detail.value
         })
     },
 
-    dealTap:function(e){  
+    dealTap: function (e) {
         let string = "obtnArry[" + e.target.dataset.index + "].selected";
         // const checkedicon = "obtnArry[" + e.target.dataset.index + "].selected"; 
         console.log(!this.data.obtnArry[e.target.dataset.index].selected);
         this.setData({
-          [string]: !this.data.obtnArry[e.target.dataset.index].selected
+            [string]: !this.data.obtnArry[e.target.dataset.index].selected
         })
         let detailValue = this.data.obtnArry.filter(it => it.selected).map(it => it.name)
         this.setData({
-          label: detailValue
+            label: detailValue
         })
         console.log(this.data.label)
-      },
-      addinput(e){
-        this.setData({ 
-          show: true,
-        });
-      },
-    //关闭弹出层，但是我这里有取消按钮，所以这个没用了
-      //onClose() {
-       // this.setData({ show: false });
-     // },
-     
-    //实时获取输入框的值
-      bindValue(e){
+    },
+    addinput(e) {
         this.setData({
-          inputValue: e.detail.value
+            show: true,
+        });
+    },
+    //关闭弹出层，但是我这里有取消按钮，所以这个没用了
+    //onClose() {
+    // this.setData({ show: false });
+    // },
+
+    //实时获取输入框的值
+    bindValue(e) {
+        this.setData({
+            inputValue: e.detail.value
         })
-      },
+    },
     //确定按钮，添加数组达到添加标签的作用
-      onInputValue(){
-        this.setData({ 
-          show: false ,
-          inputValue: this.data.inputValue
+    onInputValue() {
+        this.setData({
+            show: false,
+            inputValue: this.data.inputValue
         });
         var obtnArry = this.data.obtnArry;
         console.log(this.data.inputValue)
-        var newData = { num: obtnArry.length, name: this.data.inputValue, selected: false };
-        obtnArry.push(newData);//实质是添加lists数组内容，使for循环多一次
+        var newData = {
+            num: obtnArry.length,
+            name: this.data.inputValue,
+            selected: false
+        };
+        obtnArry.push(newData); //实质是添加lists数组内容，使for循环多一次
         this.setData({
-          obtnArry,
+            obtnArry,
         })
         console.log(this.data.inputValue)
-      },
+    },
     //取消按钮
-    onCancel(){
-        this.setData({ show: false });
+    onCancel() {
+        this.setData({
+            show: false
+        });
     },
 
-    oncollectAll(){
+    oncollectAll() {
         wx.navigateTo({
-          url: '../collectAll/collectAll'
+            url: '../collectAll/collectAll'
         })
-      },
-    onfood(){
+    },
+    onfood() {
         wx.navigateTo({
-          url: '../food/food'
+            url: '../food/food'
         })
-      },
-    ondrink(){
+    },
+    ondrink() {
         wx.navigateTo({
-          url: '../drink/drink'
+            url: '../drink/drink'
         })
-      },
-    onredpacket(){
+    },
+    onredpacket() {
         wx.navigateTo({
             url: '../redpacket/redpacket'
-          })
+        })
     },
-    onboard(){
+    onboard() {
         wx.navigateTo({
             url: '../board/board'
-          })
+        })
+    },
+    navToCouponsDetails() {
+        wx.navigateTo({
+            url: '../couponDetails/couponDetails',
+        })
     },
     /**
      * 生命周期函数--监听页面加载

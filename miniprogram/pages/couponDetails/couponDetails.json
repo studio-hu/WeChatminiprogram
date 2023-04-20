@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "my-shop":"../../components/myShop/myShop",
+        "my-coupons":"../../components/myCoupons/myCoupons"
+    },
+    "navigationBarTitleText": "优惠卷详情"
+}

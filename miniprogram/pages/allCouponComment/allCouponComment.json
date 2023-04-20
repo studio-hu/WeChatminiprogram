@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "my-coupons":"../../components/myCoupons/myCoupons"
+    },
+    "navigationBarTitleText": "全部评论"
+}

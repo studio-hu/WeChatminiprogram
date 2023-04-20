@@ -1,0 +1,78 @@
+.couponComment {
+  position: relative;
+  overflow: auto;
+}
+.couponComment .mycoupons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40rpx 0;
+}
+.couponComment .commentsSection {
+  width: 600rpx;
+  margin: 0 auto;
+}
+.couponComment .commentsSection .commentsSection-title {
+  display: flex;
+  align-items: center;
+}
+.couponComment .commentsSection .commentsSection-title .commentsSection-title-desc {
+  font-size: 30rpx;
+  color: #333333;
+  margin-left: 10rpx;
+}
+.couponComment .commentsSection .commentsSection-content {
+  font-size: 28rpx;
+  margin: 10rpx 0;
+}
+.couponComment .commentsSection .commentsSection-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.couponComment .commentsSection .commentsSection-img .commentsSection-img-item {
+  margin: 10rpx;
+}
+.couponComment .commentsSection .commentsSection-location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.couponComment .commentsSection .commentsSection-location .commentsSection-location-left {
+  display: flex;
+  align-items: center;
+}
+.couponComment .commentsSection .commentsSection-location .commentsSection-location-right {
+  display: flex;
+  align-items: center;
+}
+.couponComment .commentsSection .commentsSection-stars {
+  margin: 40rpx auto;
+}
+.couponComment .commentsSection .commentsSection-stars .commentsSection-stars-item {
+  display: flex;
+  align-items: center;
+}
+.couponComment .commentsSection .commentsSection-stars .commentsSection-stars-item .commentsSection-stars-item-desc {
+  width: 120rpx;
+  margin-right: 30rpx;
+  color: #333333;
+  font-size: 28rpx;
+  text-align: justify;
+  text-align-last: justify;
+}
+.couponComment .coupons-handle {
+  width: 100%;
+  height: 140rpx;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 80rpx;
+  justify-content: space-between;
+}
+.couponComment .coupons-handle .coupons-handle-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

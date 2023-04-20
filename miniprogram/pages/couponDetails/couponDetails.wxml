@@ -1,0 +1,110 @@
+<!--pages/couponDetails/couponDetails.wxml-->
+<view class="couponIsRecommend-details">
+    <view class="my-coupons">
+        <my-coupons></my-coupons>
+    </view>
+    <view class="couponIsRecommend-handle">
+        <view class="handle-list">
+            <view class="handle-list-img">
+                <van-image use-loading-slot width="100%" height="100%" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/collection.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+            </view>
+            <text>收藏</text>
+        </view>
+        <view class="handle-list" bindtap="navToCouponAllComment">
+            <view class="handle-list-img">
+                <van-image use-loading-slot width="100%" height="100%" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/comments.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+            </view>
+            <text>评论</text>
+        </view>
+        <view class="handle-list">
+            <view class="handle-list-img">
+                <van-image use-loading-slot width="100%" height="100%" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/forward.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+            </view>
+            <text>转发</text>
+        </view>
+
+    </view>
+    <view class="store">
+        <view class="store-title">
+            适用门店
+        </view>
+        <view >
+            <my-shop bindtap="navToShopDetail"></my-shop>
+        </view>
+        <view class="food-details">
+            <view class="food-details-title">
+                套餐详情
+            </view>
+            <view class="food-item">
+                <view class="food-item-desc">
+                    已包含
+                </view>
+                <view class="food-item-icon">
+                    <view class="food-item-list">
+                        <view class="food-item-img">
+                            <van-image use-loading-slot width="100%" height="100%" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/汉堡.png">
+                                <van-loading slot="loading" type="spinner" size="20" vertical />
+                            </van-image>
+                        </view>
+                        <view>
+                            双层芝士汉堡
+                        </view>
+                    </view>
+                    <view class="food-item-list">
+                        <view class="food-item-img">
+                            <van-image use-loading-slot width="100%" height="100%" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/薯条.png">
+                                <van-loading slot="loading" type="spinner" size="20" vertical />
+                            </van-image>
+                        </view>
+                        <view>
+                            薯条
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="food-item">
+                <view class="food-item-desc">
+                    可选择饮料（单选）
+                </view>
+                <view class="food-item-icon">
+                    <view class="food-item-list">
+                        <view class="food-item-img">
+                            <van-image use-loading-slot width="100%" height="100%" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/可乐.png">
+                                <van-loading slot="loading" type="spinner" size="20" vertical />
+                            </van-image>
+                        </view>
+                        <view>
+                            可乐
+                        </view>
+                    </view>
+                    <view class="food-item-list">
+                        <view class="food-item-img">
+                            <van-image use-loading-slot width="100%" height="100%" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/珍珠奶茶.png">
+                                <van-loading slot="loading" type="spinner" size="20" vertical />
+                            </van-image>
+                        </view>
+                        <view>
+                            奶茶
+                        </view>
+                    </view>
+                    <view class="food-item-list">
+                        <view class="food-item-img">
+                            <van-image use-loading-slot width="100%" height="100%" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/可乐2.png">
+                                <van-loading slot="loading" type="spinner" size="20" vertical />
+                            </van-image>
+                        </view>
+                        <view>
+                            无糖可乐
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/shopDetails/shopDetails.wxml-->
+<view class="shop-bg">
+    <view class="customerService">
+        <van-icon name="service-o" size="45rpx"/>
+    </view>
+    <view class="my-shop">
+        <my-shop></my-shop>
+    </view>
+    <view class="my-coupons">
+        <my-coupons wx:for="{{8}}"></my-coupons>
+    </view>
+</view>

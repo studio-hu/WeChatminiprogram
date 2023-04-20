@@ -1,0 +1,76 @@
+.shopComent {
+  position: relative;
+}
+.shopComent .my-shop {
+  width: 100%;
+  margin: 40rpx auto;
+  display: flex;
+  justify-content: center;
+}
+.shopComent .commentsSection {
+  width: 600rpx;
+  margin: 0 auto;
+}
+.shopComent .commentsSection .commentsSection-title {
+  display: flex;
+  align-items: center;
+}
+.shopComent .commentsSection .commentsSection-title .commentsSection-title-desc {
+  font-size: 30rpx;
+  color: #333333;
+  margin-left: 10rpx;
+}
+.shopComent .commentsSection .commentsSection-content {
+  font-size: 28rpx;
+  margin: 10rpx 0;
+}
+.shopComent .commentsSection .commentsSection-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shopComent .commentsSection .commentsSection-img .commentsSection-img-item {
+  margin: 10rpx;
+}
+.shopComent .commentsSection .commentsSection-location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shopComent .commentsSection .commentsSection-location .commentsSection-location-left {
+  display: flex;
+  align-items: center;
+}
+.shopComent .commentsSection .commentsSection-location .commentsSection-location-right {
+  display: flex;
+  align-items: center;
+}
+.shopComent .commentsSection .commentsSection-stars {
+  margin: 40rpx auto;
+}
+.shopComent .commentsSection .commentsSection-stars .commentsSection-stars-item {
+  display: flex;
+  align-items: center;
+}
+.shopComent .commentsSection .commentsSection-stars .commentsSection-stars-item .commentsSection-stars-item-desc {
+  width: 120rpx;
+  margin-right: 30rpx;
+  color: #333333;
+  font-size: 28rpx;
+  text-align: justify;
+  text-align-last: justify;
+}
+.shopComent .shop-handle {
+  width: 100%;
+  height: 140rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 80rpx;
+  justify-content: space-between;
+}
+.shopComent .shop-handle .shop-handle-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

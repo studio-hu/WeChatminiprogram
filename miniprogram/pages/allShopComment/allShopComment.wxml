@@ -1,0 +1,54 @@
+<!--pages/allCouponComment/allCouponComment.wxml-->
+<!--pages/couponComment/couponComment.wxml-->
+<view class="couponComment">
+    <view class="mycoupons">
+        <my-shop showCount="{{false}}"></my-shop>
+    </view>
+    <view class="commentsSection" wx:for="{{8}}">
+        <view class="commentsSection-title">
+            <view class="commentsSection-title-left">
+                <van-image use-loading-slot width="80rpx" height="80rpx"
+                    src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/avatar.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+                <view class="commentsSection-title-desc">
+                    匿名买家
+                </view>
+            </view>
+            <view style="font-size: 24rpx;color: #aaaaaa;">
+                刚刚
+            </view>
+        </view>
+        <view class="commentsSection-content">
+            <text>第一次去蟹黄堡吃饭，真的是很优惠，环境也很好到店后老板还给我送了饮料，服务态度也好，下次还会光顾的，希望下次这个优惠券还在！</text>
+        </view>
+        <view class="commentsSection-img">
+            <view class="commentsSection-img-item" wx:for="{{5}}">
+                <van-image use-loading-slot radius="10rpx" width="150rpx" height="150rpx"
+                    src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/image - 副本 1.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+            </view>
+
+        </view>
+        <!-- <view class="commentsSection-location">
+            <view class="commentsSection-location-left">
+                <van-icon name="location-o" color="#7062F3" size="40rpx" />
+                添加地点
+            </view>
+            <view class="commentsSection-location-right">
+                <van-image use-loading-slot width="50rpx" height="50rpx"
+                    src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/星星 - 副本 2.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+                <view>
+                    标记位置让更多人看到
+                </view>
+                <van-icon name="arrow" color="#7062F3" size="40rpx" />
+            </view>
+        </view> -->
+
+
+    </view>
+
+</view>

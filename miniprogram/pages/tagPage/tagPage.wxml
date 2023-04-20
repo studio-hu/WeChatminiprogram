@@ -1,0 +1,73 @@
+<!--pages/tagPage/tagPage.wxml-->
+<view class="container">
+    <view class="title">
+        <view class="title-min">选择{{tag.length>2?2:tag.length}}/2</view>
+        <view class="title-tag">是时候定制你的标签了</view>
+    </view>
+    <view class="select-tag">
+        <view class="select-item">
+            <view class="select-icon">
+                <van-image use-loading-slot image-class="image-class" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/home.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+                <text>家</text>
+            </view>
+            <view class="select-input">
+                <van-cell title="{{home?home:'请选择'}}" is-link bind:click="showPopup" custom-class="select-class" data-type="home" />
+            </view>
+        </view>
+        <view class="select-item">
+            <view class="select-icon">
+                <van-image use-loading-slot image-class="image-class" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/school.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+
+                <text>学校</text>
+            </view>
+            <view class="select-input">
+                <van-cell title="{{school?school:'请选择'}}" is-link bind:click="showPopup" custom-class="select-class" data-type="school" />
+
+            </view>
+        </view>
+        <view class="select-item">
+            <view class="select-icon">
+                <van-image use-loading-slot image-class="image-class" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/company.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+                <text>公司</text>
+            </view>
+            <view class="select-input">
+                <van-cell title="{{company?company:'请选择'}}" is-link bind:click="showPopup" custom-class="select-class" data-type="company" />
+            </view>
+        </view>
+        <view class="select-item">
+            <view class="select-icon">
+                <van-image use-loading-slot image-class="image-class" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/company_2.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+                <text>常去场所</text>
+            </view>
+            <view class="select-input">
+                <van-cell title="{{oftenPlace?oftenPlace:'请选择'}}" is-link bind:click="showPopup" custom-class="select-class" data-type="oftenPlace" />
+            </view>
+        </view>
+    </view>
+    <view class="button-submit">
+        <van-button type="default" custom-class="button-class" color="{{tag.length>=2&&'#7062F3'}}" bindtap="submit">完成</van-button>
+    </view>
+</view>
+<!-- 弹出层 -->
+<van-popup show="{{ homeShow }}" bind:close="onClose" round position="bottom" custom-style="height: 45%" custom-class="popup">
+    <van-picker show-toolbar title="家" columns="{{ homeArray }}" bind:cancel="onCancel" bind:confirm="onConfirm" data-type="home" />
+</van-popup>
+<van-popup show="{{ schoolShow }}" bind:close="onClose" round position="bottom" custom-style="height: 45%" custom-class="popup">
+    <van-picker show-toolbar title="学校" columns="{{ schoolArray }}" bind:cancel="onCancel" bind:confirm="onConfirm" data-type="school" />
+</van-popup>
+<van-popup show="{{ companyShow }}" bind:close="onClose" round position="bottom" custom-style="height: 45%" custom-class="popup">
+    <van-picker show-toolbar title="公司" columns="{{ companyArray }}" bind:cancel="onCancel" bind:confirm="onConfirm" data-type="company" />
+</van-popup>
+<van-popup show="{{ oftenPlaceShow }}" bind:close="onClose" round position="bottom" custom-style="height: 45%" custom-class="popup">
+    <van-picker show-toolbar title="常去场所" columns="{{ oftenPlaceArray }}" bind:cancel="onCancel" bind:confirm="onConfirm" data-type="oftenPlace" />
+</van-popup>
+<!-- 消息提示 -->
+<van-toast id="van-toast" />

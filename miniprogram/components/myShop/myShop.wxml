@@ -1,0 +1,35 @@
+<!--components/myShop/myShop.wxml-->
+<view class="store-details">
+    <view class="store-left">
+        <view class="store-details-img">
+            <van-image use-loading-slot width="100%" height="100%" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/汉堡包.png">
+                <van-loading slot="loading" type="spinner" size="20" vertical />
+            </van-image>
+        </view>
+        <view class="store-details-score">
+            <view style="height: 30rpx;width:30rpx;">
+                <van-image use-loading-slot width="100%" height="100%" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/任务评分管理2.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+            </view>
+            <view>4.9</view>
+        </view>
+    </view>
+    <view class="store-rigth">
+        <view class="shop-name">
+            蟹黄堡（广软店）
+        </view>
+        <view class="shop-tag">
+            <van-icon name="label-o" color="#4169E1" />
+            <van-tag plain type="primary" custom-class="tag">广州软件学院</van-tag>
+            <van-tag plain type="primary" custom-class="tag">快餐</van-tag>
+        </view>
+        <view class="shop-location">
+            <van-icon name="location-o" />从化区从化南路548号
+        </view>
+    </view>
+    <view class="collection">
+        <van-icon name="star-o" color="	#FFD700" size="40rpx" />
+        收藏
+    </view>
+</view>

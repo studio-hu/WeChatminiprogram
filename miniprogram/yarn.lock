@@ -3,11 +3,11 @@
 
 
 "@vant/area-data@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.npmmirror.com/@vant/area-data/-/area-data-1.4.0.tgz#6140c32a3b60e42512a3f428ca9e175b7307d048"
-  integrity sha512-XS+BZJPplK20qX+yoC3jvDTYq90Hzrz6pRZr2ASNH8pgddXNYqjLvhyl4cm6VHJ/OK/59NnoxkO1qU1PEiIvDw==
+  version "1.4.1"
+  resolved "https://registry.npmmirror.com/@vant/area-data/-/area-data-1.4.1.tgz#b4f1bce05dbb147dc08fd2ed9b2a0f63d3329b29"
+  integrity sha512-D8zI/rfxREhnIKGoYzsEJZ73fte4JARhFeFftLIH7ynu1sPrCBEgPkLEbwPyvw3VC4JdSIuzaK5uOhu+BcoPXw==
 
 "@vant/weapp@^1.10.14":
-  version "1.10.14"
-  resolved "https://registry.npmmirror.com/@vant/weapp/-/weapp-1.10.14.tgz#b5f249097df1f1a7aa5c6602d8cad4afd397f934"
-  integrity sha512-5usuhoN1kiOV6pzrdVzHrAux6DupKlGd9w+yYc992Zy1n1wHLZMb1dGM3+xtbNE3tpWE2qv95vIFSMpJRFyE7Q==
+  version "1.10.15"
+  resolved "https://registry.npmmirror.com/@vant/weapp/-/weapp-1.10.15.tgz#7456d0156a26f92f21a59ef777acd6647498dc38"
+  integrity sha512-swM4k3pVwt/6Tnijvq86paLiKE1CzbrBQ4lR7+9uRhwKOM0HS3ooK1Q4IjSEyxQ59ZFKmYYvZln77RZcnSDqmA==

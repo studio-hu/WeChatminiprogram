@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "my-shop":"../../components/myShop/myShop"
+    },
+    "navigationBarTitleText": "店铺评论"
+}

@@ -1,66 +1,91 @@
-<!--index.wxml-->
-<view class="cu-list menuavatar">
-    <view class="cu-item">
-        <view class="cu-avatar round lg" style="background-image: url({{userInfo.avatarUrl}});">
-            <view class="content flex-sub">
-                <view style="color: black;margin-left: 120px;">{{userInfo.nickName}}</view>
+<view class="container">
+    <view class="head">
+        <view class="head-avatar">
+            <van-image round custom-class="avatarImg" src="{{userInfo.avatarUrl}}" />
+        </view>
+        <view class="head-message">
+            <view>
+                <van-icon name="manager" custom-class="icon" />{{userInfo.nickName}}
+            </view>
+            <view>
+                <van-icon name="location" custom-class="icon" />显示地理位置
             </view>
         </view>
     </view>
+    <view class="search">
+        <van-field value="{{ value }}" placeholder="" border="{{ false }}" bind:change="onChange" left-icon="arrow-left" right-icon="search" input-class="search-input" right-icon-class="right-icon-class" />
     </view>
-
-<view class='btn_view'>
-        <text>标签：</text>
-        <block wx:for="{{obtnArry}}" >
-          <view class='label_view {{item.selected ? "active" : ""}}' data-value="{{item.name}}" bindtap='dealTap' checked="{{item.selected}}" data-index="{{index}}" style="width: auto;">
-            {{item.name}}
-          </view>
-        </block>
-        <van-popup show="{{ show }}" bind:close="onClose" close-on-click-overlay="{{false}}" overlay="false">
-          <view class="input_view">
-            <text>请输入标签：</text>
-            <input class="input" placeholder="最多输入6个字" maxlength="6" bindinput="bindValue"></input>
-            <!-- <view class="btn"> -->
-                <button catchtap="onInputValue" class="determine_button">确定</button>
-                <button catchtap="onCancel" class="determine_button1">取消</button>
-            <!-- </view> -->
-          </view>
-        </van-popup>
-        <image bindtap='addinput' class="img" src="/images/jia.png" ></image>
-  </view>
-
-<view catchtap='onboard'>
-    <image mode="widthFix" src="../../images/avertising.jpg"></image>
-</view>
-
-<view class="flex nav">
-  	<view class="nav-item  {{index==current?'text-selected current':''}}" wx:for="{{tabs}}" wx:key bindtap="tabSelect" data-id="{{index}}">
-  		{{item}}
-  	</view>
-  </view>
-
-<view class="nav">
-    <view class="nav-item"  catchtap='oncollectAll'>
-    <view> <image src="../../images/mydiscount.png" style="width:25px;height:23px;"></image></view>
-    <view>优惠专区</view>
+    <view class="classification">
+        <view class="classification-title">
+            <van-icon name="apps-o" size="28rpx" />
+            <text> 优惠卷分类</text>
+        </view>
+        <view class="classification-list">
+            <view class="classification-item">
+                <van-image use-loading-slot image-class="image-class" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/food.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+                <view class="desc">
+                    美食
+                </view>
+            </view>
+            <view class="classification-item">
+                <van-image use-loading-slot image-class="image-class" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/game.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+                <view class="desc">
+                    娱乐
+                </view>
+            </view>
+            <view class="classification-item">
+                <van-image use-loading-slot image-class="image-class" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/drinks.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+                <view class="desc">
+                    甜品饮品
+                </view>
+            </view>
+            <view class="classification-item">
+                <van-image use-loading-slot image-class="image-class" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/sports.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+                <view class="desc">
+                    运动
+                </view>
+            </view>
+            <view class="classification-item">
+                <van-image use-loading-slot image-class="image-class" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/超市.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+                <view class="desc">
+                    超市便利
+                </view>
+            </view>
+            <view class="classification-item">
+                <van-image use-loading-slot image-class="image-class" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/鲜花.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+                <view class="desc">
+                    鲜花绿植
+                </view>
+            </view>
+        </view>
+        <view class="redEnvelope">
+            <van-image use-loading-slot width="80rpx" height="80rpx" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/redEnvelope.png">
+                <van-loading slot="loading" type="spinner" size="20" vertical />
+            </van-image>
+        </view>
     </view>
-
-    <view class="nav-item" catchtap='onfood'>
-    <view>  <image src="../../images/food.png"  style="width:25px;height:23px;"></image></view>
-    <view>美食</view>
+    <view class="couponIsRecommend">
+        <view class="couponIsRecommend-title">
+            <van-image use-loading-slot width="60rpx" height="60rpx" src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/coupons.png">
+                <van-loading slot="loading" type="spinner" size="20" vertical />
+            </van-image>
+            <text class="couponIsRecommend-title-detail">优惠卷推荐</text>
+        </view>
+        <van-divider customStyle="border-color: #797979;width:90%;margin: 0 auto;margin-bottom:40rpx" />
+        <view class="couponIsRecommend-list">
+            <my-coupons wx:for="{{8}}" bindtap="navToCouponsDetails"></my-coupons>
+        </view>
     </view>
-
-    <view class="nav-item" catchtap='ondrink'>
-    <view>  <image src="../../images/drink.png"  style="width:25px;height:23px;"></image></view>
-    <view>饮品</view>
-    </view>
-</view>
-<view class=".hr"></view>
-<image src="../../images/hongbao.png" style="width:25px;height:23px; margin-left: 10px;"></image>
-<view style="border: 1px black solid;width: 65%;margin-top:-20px;margin-left: 45px;">
-    <text style="display:flex;align-items:center;justify-content:center;width: 100%;">签到躺赚大红包，戳我去领</text>    
-</view>
-    <van-button  style="margin-left: 265px;margin-top:-20px;" color="red" plain type="primary" size="mini" catchtap='onredpacket'>领取</van-button>
-<view>
-
 </view>

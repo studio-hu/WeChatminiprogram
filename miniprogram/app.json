@@ -16,7 +16,15 @@
         "pages/companyQualification/companyQualification",
         "pages/financialQualification/financialQualification",
         "pages/merchantsHomepage/merchantsHomepage",
-        "pages/testupload/testupload"
+        "pages/testupload/testupload",
+        "pages/tagPage/tagPage",
+        "pages/couponDetails/couponDetails",
+        "pages/shopDetails/shopDetails",
+        "pages/dialogue/dialogue",
+        "pages/couponComment/couponComment",
+        "pages/shopComment/shopComment",
+        "pages/allCouponComment/allCouponComment",
+        "pages/allShopComment/allShopComment"
     ],
     "window": {
         "backgroundColor": "#F6F6F6",
@@ -62,6 +70,14 @@
         "van-cell-group": "@vant/weapp/cell-group/index",
         "van-calendar": "@vant/weapp/calendar/index",
         "van-image": "@vant/weapp/image/index",
-        "van-toast": "@vant/weapp/toast/index"
+        "van-toast": "@vant/weapp/toast/index",
+        "van-picker": "@vant/weapp/picker/index",
+        "van-loading": "@vant/weapp/loading/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "van-divider": "@vant/weapp/divider/index",
+        "van-tag": "@vant/weapp/tag/index",
+        "van-grid": "@vant/weapp/grid/index",
+        "van-grid-item": "@vant/weapp/grid-item/index",
+        "van-rate": "@vant/weapp/rate/index"
     }
 }

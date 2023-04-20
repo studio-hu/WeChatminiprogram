@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "my-shop":"../../components/myShop/myShop",
+        "my-coupons":"../../components/myCoupons/myCoupons"
+    },
+    "navigationBarTitleText": "店铺详情"
+}

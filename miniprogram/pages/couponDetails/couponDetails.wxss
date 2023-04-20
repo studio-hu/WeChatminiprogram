@@ -1,0 +1,62 @@
+.couponIsRecommend-details {
+  overflow: auto;
+}
+.couponIsRecommend-details .my-coupons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50rpx;
+}
+.couponIsRecommend-details .couponIsRecommend-handle {
+  width: 600rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.couponIsRecommend-details .couponIsRecommend-handle .handle-list {
+  margin-right: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.couponIsRecommend-details .couponIsRecommend-handle .handle-list .handle-list-img {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.couponIsRecommend-details .couponIsRecommend-handle .handle-list text {
+  color: #aaa;
+  font-size: 24rpx;
+}
+.couponIsRecommend-details .store {
+  width: 600rpx;
+  margin: 0 auto;
+}
+.couponIsRecommend-details .store .store-title {
+  font-size: 28rpx;
+  margin: 20rpx 0;
+}
+.couponIsRecommend-details .store .food-details {
+  width: 600rpx;
+}
+.couponIsRecommend-details .store .food-details .food-details-title {
+  font-size: 28rpx;
+  margin: 20rpx 0;
+}
+.couponIsRecommend-details .store .food-details .food-item .food-item-desc {
+  font-size: 24rpx;
+  color: #aaa;
+}
+.couponIsRecommend-details .store .food-details .food-item .food-item-icon {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.couponIsRecommend-details .store .food-details .food-item .food-item-icon .food-item-list {
+  margin: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.couponIsRecommend-details .store .food-details .food-item .food-item-icon .food-item-list .food-item-img {
+  width: 80rpx;
+  height: 80rpx;
+}

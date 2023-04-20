@@ -1,0 +1,97 @@
+.couponIsRecommend-item {
+    width: 620rpx;
+    height: 180rpx;
+    // margin: 50rpx auto;
+    margin-bottom: 30rpx;
+    // margin-bottom: 50rpx;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30rpx;
+    box-shadow: 0 8rpx 30rpx 1rpx rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    // background: radial-gradient(30rpx at bottom, transparent 50%, #ffffff 50%);
+
+    .couponIsRecommend-img {
+        width: 150rpx;
+        height: 150rpx;
+        margin: 15rpx;
+    }
+
+    .couponIsRecommend-desc {
+        width: 300rpx;
+        display: flex;
+        flex-direction: column;
+
+        text:nth-child(1) {
+            font-weight: bold;
+            font-size: 34rpx;
+        }
+
+        text:nth-child(2) {
+            font-size: 22rpx;
+            color: #A9A9A9;
+        }
+
+        button {
+            width: 100rpx;
+            height: 40rpx;
+            font-size: 24rpx;
+            padding: 0;
+            margin: 0;
+            border-radius: 20rpx;
+            background-color: #BAB3F7;
+            color: #ffffff;
+            line-height: 40rpx;
+            margin-left: 10rpx;
+            margin-top: 10rpx;
+        }
+    }
+
+    .couponIsRecommend-count {
+        display: flex;
+        align-items: center;
+        width: 160rpx;
+        height: 100%;
+        font-size: 28rpx;
+        font-weight: bold;
+        border-left: #bbbbbb 1px dashed;
+        padding-left: 10rpx;
+
+        text {
+            font-size: 60rpx;
+            color: #7062F3;
+            margin: 0 5rpx;
+        }
+    }
+
+    .couponIsRecommend-round::before {
+        content: '';
+        width: 30rpx;
+        height: 30rpx;
+        border-radius: 50%;
+        background-color: #e6e6e6;
+        top: -15rpx;
+        right: 140rpx;
+        position: absolute;
+    }
+
+    .couponIsRecommend-round::after {
+        content: '';
+        width: 30rpx;
+        height: 30rpx;
+        border-radius: 50%;
+        background-color: #e6e6e6;
+        // border: #e6e6e6 1px solid;
+        bottom: -15rpx;
+        right: 140rpx;
+        position: absolute;
+    }
+    .couponIsRecommend-icon{
+        width: 160rpx;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

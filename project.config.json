@@ -38,7 +38,7 @@
         "showES6CompileOption": false,
         "useCompilerPlugins": false,
         "minifyWXML": true,
-        "ignoreUploadUnusedFiles": true
+        "ignoreUploadUnusedFiles": false
     },
     "appid": "wxc99fef3c9fb23b65",
     "projectname": "quickstart-wx-cloud",
@@ -76,5 +76,8 @@
     "editorSetting": {
         "tabIndent": "insertSpaces",
         "tabSize": 4
+    },
+    "simulatorPluginLibVersion": {
+        "wxext14566970e7e9f62": "2.27.3"
     }
 }

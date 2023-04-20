@@ -1,0 +1,144 @@
+.container {
+    background-color: #BAB3F7;
+    height: 100vh;
+    overflow: auto;
+
+    .head {
+        width: 600rpx;
+        height: 100rpx;
+        display: flex;
+        align-items: center;
+        margin: 40rpx auto;
+
+        // background-color: rgb(28, 58, 48);
+        .head-avatar {
+            margin: 20rpx;
+            width: 80rpx;
+            height: 80rpx;
+
+            .avatarImg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .head-message {
+            color: #ffffff;
+            font-size: 28rpx;
+
+            .icon {
+                margin-right: 10rpx;
+            }
+        }
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .van-cell {
+            border-radius: 20rpx;
+            width: 600rpx;
+        }
+
+        .van-icon {
+            font-size: 45rpx;
+            color: #bbbbbb;
+        }
+
+        .right-icon-class {
+            font-size: 40rpx;
+        }
+
+        .search-input {
+            border-radius: 8rpx;
+            background-color: #bbbbbb;
+            padding-left: 20rpx;
+            margin: 0 10rpx;
+            color: #333333;
+            font-size: 24rpx;
+
+        }
+    }
+
+    .classification {
+        width: 560rpx;
+        height: 300rpx;
+        position: relative;
+        // background-color: aqua;
+        margin: 0 auto;
+        // margin: 20rpx;
+        margin-bottom: 30rpx;
+
+        .classification-title {
+            font-size: 24rpx;
+            color: #ffffff;
+            padding-left: 40rpx;
+            padding: 20rpx 0;
+        }
+
+        .classification-list {
+            width: 100%;
+            height: 230rpx;
+            background-color: #ffffff;
+            border-radius: 20rpx;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            .classification-item {
+                width: 180rpx;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                // background-color: aqua;
+                .image-class {
+                    width: 60rpx;
+                    height: 60rpx;
+                }
+
+                .desc {
+                    font-size: 24rpx;
+                    color: #aaaaaa;
+                }
+            }
+        }
+
+        .redEnvelope {
+            position: absolute;
+            right: -80rpx;
+            bottom: 20rpx;
+        }
+    }
+
+    .couponIsRecommend {
+        background-color: #ffffff;
+        width: 100%;
+        padding-bottom: 50rpx;
+        // height: 800rpx;
+        border-top-left-radius: 50rpx;
+        border-top-right-radius: 50rpx;
+
+        .couponIsRecommend-title {
+            display: flex;
+            align-items: center;
+            padding: 20rpx 60rpx;
+            width: 100%;
+
+            .couponIsRecommend-title-detail {
+                margin-left: 20rpx; 
+                font-size: 26rpx;
+                color: #000;
+            }
+        }
+        .couponIsRecommend-list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+}

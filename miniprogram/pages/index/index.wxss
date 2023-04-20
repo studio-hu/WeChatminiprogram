@@ -1,92 +1,117 @@
-/**index.wxss**/
-.determine_button{
-    background: #ff784a;
-    color: white;
-    border-radius: 10rpx;
-    height: 60rpx;
-    line-height:60rpx;
-    position: fixed;
-    bottom: 5rpx;
-    left: 8rpx;
-    width: 46%;
-  }
-  .determine_button1{
-    background: #ff784a;
-    color: white;
-    border-radius: 10rpx;
-    height: 60rpx;
-    line-height:60rpx;
-    position: fixed;
-    bottom: 5rpx;
-    right: 8rpx;
-    width: 46%;
-  }
-  .label_view{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rpx 10rpx;
-    width: 140rpx;
-    height: 50rpx;
-    border: 1rpx solid rgb(114, 107, 107);
-    font-size: 26rpx;
-    border-radius: 12rpx;
-    color: rgb(114, 107, 107);
-    margin-right: 5rpx;
-    margin-top: 15rpx;
-  }
-  .btn_view{
-    margin: 10rpx 15rpx;
-    font-size: 26rpx;
-    color: rgb(99, 95, 95);
-    width: 700rpx;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .btn_view text{
-    display: flex;
-    align-items: center;
-  }
-  .active{
-    background: #ff784a;
-    border: 1rpx solid rgb(255, 253, 253);
-  }
-  .btn_view .img{
-    margin-top: 8rpx;
-    width: 65rpx;
-    height: 65rpx;
-  }
-  .input_view{
-    font-size: 28rpx;
-    width: 400rpx;
-    height: 270rpx;
-    margin: 20rpx 20rpx;
-  }
-  .input{
-    margin-top: 20rpx;
-    margin-left: 22rpx;
-    width: 350rpx;
-    border: 1px #aaa solid
-  }
-
-  .nav{
-    display:  flex;
-    flex-direction:  row;
-    text-align:  center;
-  }
-  
-  .nav-item{
-    width:  35%;
-    margin-top:  20px;
-    font-size:  13px;
-    border: 3px white solid
-  }
-  
-  .hr{
-    height:  20px;
-    background-color:  #cccccc;
-    margin-top:15px;
-    opacity:  0.2;
-  }
+.container {
+  background-color: #BAB3F7;
+  height: 100vh;
+  overflow: auto;
+}
+.container .head {
+  width: 600rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  margin: 40rpx auto;
+}
+.container .head .head-avatar {
+  margin: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.container .head .head-avatar .avatarImg {
+  width: 100%;
+  height: 100%;
+}
+.container .head .head-message {
+  color: #ffffff;
+  font-size: 28rpx;
+}
+.container .head .head-message .icon {
+  margin-right: 10rpx;
+}
+.container .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .search .van-cell {
+  border-radius: 20rpx;
+  width: 600rpx;
+}
+.container .search .van-icon {
+  font-size: 45rpx;
+  color: #bbbbbb;
+}
+.container .search .right-icon-class {
+  font-size: 40rpx;
+}
+.container .search .search-input {
+  border-radius: 8rpx;
+  background-color: #bbbbbb;
+  padding-left: 20rpx;
+  margin: 0 10rpx;
+  color: #333333;
+  font-size: 24rpx;
+}
+.container .classification {
+  width: 560rpx;
+  height: 300rpx;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+}
+.container .classification .classification-title {
+  font-size: 24rpx;
+  color: #ffffff;
+  padding-left: 40rpx;
+  padding: 20rpx 0;
+}
+.container .classification .classification-list {
+  width: 100%;
+  height: 230rpx;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.container .classification .classification-list .classification-item {
+  width: 180rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .classification .classification-list .classification-item .image-class {
+  width: 60rpx;
+  height: 60rpx;
+}
+.container .classification .classification-list .classification-item .desc {
+  font-size: 24rpx;
+  color: #aaaaaa;
+}
+.container .classification .redEnvelope {
+  position: absolute;
+  right: -80rpx;
+  bottom: 20rpx;
+}
+.container .couponIsRecommend {
+  background-color: #ffffff;
+  width: 100%;
+  padding-bottom: 50rpx;
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+}
+.container .couponIsRecommend .couponIsRecommend-title {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 60rpx;
+  width: 100%;
+}
+.container .couponIsRecommend .couponIsRecommend-title .couponIsRecommend-title-detail {
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  color: #000;
+}
+.container .couponIsRecommend .couponIsRecommend-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

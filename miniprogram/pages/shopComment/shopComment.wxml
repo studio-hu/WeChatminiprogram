@@ -1,0 +1,82 @@
+<!--pages/shopComment/shopComment.wxml-->
+<view class="shopComent">
+    <view class="my-shop">
+        <my-shop></my-shop>
+    </view>
+    <view class="commentsSection">
+        <view class="commentsSection-title">
+            <van-image use-loading-slot width="50rpx" height="50rpx"
+                src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/comments.png">
+                <van-loading slot="loading" type="spinner" size="20" vertical />
+            </van-image>
+            <view class="commentsSection-title-desc">
+                评价
+            </view>
+        </view>
+        <view class="commentsSection-content">
+            <text>第一次去蟹黄堡吃饭，真的是很优惠，环境也很好到店后老板还给我送了饮料，服务态度也好，下次还会光顾的，希望下次这个优惠券还在！</text>
+        </view>
+        <view class="commentsSection-img">
+            <view class="commentsSection-img-item" wx:for="{{5}}">
+                <van-image use-loading-slot radius="10rpx" width="150rpx" height="150rpx"
+                    src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/image - 副本 1.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+            </view>
+
+        </view>
+        <view class="commentsSection-location">
+            <view class="commentsSection-location-left">
+                <van-icon name="location-o" color="#7062F3" size="40rpx" />
+                添加地点
+            </view>
+            <view class="commentsSection-location-right">
+                <van-image use-loading-slot width="50rpx" height="50rpx"
+                    src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/星星 - 副本 2.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+                <view>
+                    标记位置让更多人看到
+                </view>
+                <van-icon name="arrow" color="#7062F3" size="40rpx" />
+            </view>
+        </view>
+        <view class="commentsSection-stars">
+            <view class="commentsSection-stars-item">
+                <view class="commentsSection-stars-item-desc">
+                    服务态度
+                </view>
+                <van-rate value="{{ value }}" size="40rpx" color="#6F61E6" gutter="4rpx" bind:change="onChange" />
+            </view>
+            <view class="commentsSection-stars-item">
+                <view class="commentsSection-stars-item-desc">
+                    店铺
+                </view>
+                <van-rate value="{{ value }}" size="40rpx" color="#6F61E6" gutter="4rpx" bind:change="onChange" />
+            </view>
+            <view class="commentsSection-stars-item">
+                <view class="commentsSection-stars-item-desc">
+                    满意度
+                </view>
+                <van-rate value="{{ value }}" size="40rpx" color="#6F61E6" gutter="4rpx" bind:change="onChange" />
+            </view>
+            
+
+
+        </view>
+
+    </view>
+    <view class="shop-handle">
+        <view class="shop-handle-left">
+            <van-image use-loading-slot  width="50rpx" height="50rpx"
+                    src="cloud://cloud-1g86mra2b9adddaf.636c-cloud-1g86mra2b9adddaf-1313694429/image/存入草稿箱.png">
+                    <van-loading slot="loading" type="spinner" size="20" vertical />
+                </van-image>
+                存草稿
+        </view>
+        <view class="shop-handle-right">
+            <van-button color="#BAB3F7" round>发布评论</van-button>
+        </view>
+    </view>
+</view>
+  
